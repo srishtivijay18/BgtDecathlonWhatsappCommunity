@@ -12,14 +12,12 @@
     }
 
     .container{
-        max-width: 700px;
-        margin: 0 auto;
-        background: #3643BA;
-        padding: 40px;
-        border-radius: 8px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        text-align: center;
-    }
+    max-width: 800px;
+    margin: auto;
+    background: #3643BA;
+    padding: 40px;
+    border-radius: 20px;
+}
 
     h1{
         color: white;
@@ -34,24 +32,45 @@
         margin-bottom: 30px;
     }
 
-    .btn{
-        display: block;
-        width: 85%;
-        margin: 18px auto;
-        padding: 20px;
-        color: white;
-        text-decoration: none;
-        font-size: 24px;
-        font-weight: 600;
-        border: 2px solid rgba(255,255,255,0.8);
-        border-radius: 12px;
-        transition: all 0.3s ease;
-    }
+```css
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:90%;
+    margin:16px auto;
+    padding:20px 25px;
+    color:white;
+    text-decoration:none;
+    border:2px solid rgba(255,255,255,0.9);
+    border-radius:12px;
+    background:transparent;
+    font-size:22px;
+    font-weight:600;
+}
 
-    .btn:hover{
-        background: rgba(255,255,255,0.12);
-        transform: translateY(-2px);
-    }
+.btn:hover{
+    background:rgba(255,255,255,0.1);
+}
+
+.left,
+.right{
+    font-size:32px;
+    width:50px;
+    text-align:center;
+}
+
+.text{
+    flex:1;
+    text-align:left;
+    padding:0 20px;
+}
+
+.divider{
+    width:2px;
+    height:50px;
+    background:rgba(255,255,255,0.7);
+}
 
     hr{
         border: none;
@@ -76,34 +95,55 @@
     <hr>
     <p>Click to join</p>
 
- <a class="btn" href="https://chat.whatsapp.com/Fl7CWmAapnAABEVCoC3g81">
-    <i class="fa-solid fa-person-running"></i>
-    Run Club - BGT
+```html
+<a class="btn" href="https://chat.whatsapp.com/Fl7CWmAapnAABEVCoC3g81" target="_blank">
+    <span class="left">🏃</span>
+    <span class="divider"></span>
+    <span class="text">Run Club - BGT</span>
+    <span class="divider"></span>
+    <span class="right">💬</span>
 </a>
 
-<a class="btn" href="https://chat.whatsapp.com/ChvQY4XxPGx3sFdUXa75Ni">
-    <i class="fa-solid fa-bicycle"></i>
-    Cycling Club - BGT
+<a class="btn" href="https://chat.whatsapp.com/ChvQY4XxPGx3sFdUXa75Ni" target="_blank">
+    <span class="left">🚴</span>
+    <span class="divider"></span>
+    <span class="text">Cycling Club - BGT</span>
+    <span class="divider"></span>
+    <span class="right">💬</span>
 </a>
 
-<a class="btn" href="https://chat.whatsapp.com/FAKj8k9G50SBVxtNGG3TyO?s=cl&p=i&ilr=1">
-    <i class="fa-solid fa-cricket"></i>
-    Cricket Club - BGT
+<a class="btn" href="https://chat.whatsapp.com/FAKj8k9G50SBVxtNGG3TyO?s=cl&p=i&ilr=1" target="_blank">
+    <span class="left">🏏</span>
+    <span class="divider"></span>
+    <span class="text">Cricket Club - BGT</span>
+    <span class="divider"></span>
+    <span class="right">💬</span>
 </a>
 
-<a class="btn" href="https://chat.whatsapp.com/ChvQY4XxPGx3sFdUXa75Ni">
-    <i class="fa-solid fa-person-swimming"></i>
-    Aqua Club - BGT
+<a class="btn" href="https://chat.whatsapp.com/ChvQY4XxPGx3sFdUXa75Ni" target="_blank">
+    <span class="left">🏊</span>
+    <span class="divider"></span>
+    <span class="text">Aqua Club - BGT</span>
+    <span class="divider"></span>
+    <span class="right">💬</span>
 </a>
 
-<a class="btn" href="https://chat.whatsapp.com/H942rhptsxnJ3rUHwSu3D3?mode=wwt">
-    <i class="fa-solid fa-person-skating"></i>
-    Skaters Community - BGT
+<a class="btn" href="https://chat.whatsapp.com/H942rhptsxnJ3rUHwSu3D3?mode=wwt" target="_blank">
+    <span class="left">🛼</span>
+    <span class="divider"></span>
+    <span class="text">Skaters Community - BGT</span>
+    <span class="divider"></span>
+    <span class="right">💬</span>
 </a>
 
-<a class="btn" href="https://chat.whatsapp.com/HWMC7PbIOJhFcNX56xRMGp">
-    <i class="fa-solid fa-mountain"></i>
-    Trekking Community - BGT
+<a class="btn" href="https://chat.whatsapp.com/HWMC7PbIOJhFcNX56xRMGp" target="_blank">
+    <span class="left">🥾</span>
+    <span class="divider"></span>
+    <span class="text">Trekking Community - BGT</span>
+    <span class="divider"></span>
+    <span class="right">💬</span>
+</a>
+
 </a>
     <div class="footer">
         Stay active. Stay connected. #DecathlonBGT
